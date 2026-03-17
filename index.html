@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IoT Solution | Energy & OEE Monitoring System</title>
+<meta name="description" content="Simulasi gratis energy monitoring & OEE system. Kurangi biaya energi dan tingkatkan efisiensi pabrik Anda.">
+
+<style>
+body {font-family: Arial; margin:0; color:#333;}
+.container {width:90%; max-width:1100px; margin:auto;}
+section {padding:60px 0;}
+h1,h2 {margin-bottom:15px;}
+.btn {
+    background:#28a745; color:#fff; padding:12px 25px;
+    text-decoration:none; border-radius:6px;
+}
+.hero {
+    background:linear-gradient(to right,#0f4c81,#1c7ed6);
+    color:white; text-align:center; padding:80px 20px;
+}
+.grid {
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.card {
+    background:#f4f4f4; padding:20px; border-radius:10px;
+}
+.dark {background:#0f4c81; color:white; text-align:center;}
+input, textarea {
+    width:100%; padding:10px; margin:10px 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h1>IoT Solution</h1>
+        <p>Simulasi Gratis Energy Monitoring & OEE System</p>
+        <a href="#form" class="btn">Coba Simulasi Gratis</a>
+    </div>
+</section>
+
+<!-- VALUE -->
+<section>
+    <div class="container">
+        <h2>Kenapa Harus Monitoring?</h2>
+        <div class="grid">
+            <div class="card">Hemat energi hingga 15%</div>
+            <div class="card">Pantau OEE real-time</div>
+            <div class="card">Kurangi downtime mesin</div>
+            <div class="card">Keputusan berbasis data</div>
+        </div>
+    </div>
+</section>
+
+<!-- SIMULASI DASHBOARD -->
+<section style="background:#f9f9f9;">
+    <div class="container">
+        <h2>Simulasi Dashboard</h2>
+        <p>Berikut contoh tampilan monitoring (simulasi):</p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Energy Consumption</h3>
+                <p>1200 kWh</p>
+            </div>
+            <div class="card">
+                <h3>OEE</h3>
+                <p>85%</p>
+            </div>
+            <div class="card">
+                <h3>Machine Status</h3>
+                <p>Running</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TEKNIKAL -->
+<section>
+    <div class="container">
+        <h2>Teknologi yang Digunakan</h2>
+        <ul>
+            <li>Power Meter (ABB / Omron / Schneider)</li>
+            <li>PLC Omron CP2E</li>
+            <li>Moxa Industrial Gateway</li>
+            <li>Dashboard Web-based</li>
+        </ul>
+    </div>
+</section>
+
+<!-- FORM LEAD -->
+<section id="form" class="dark">
+    <div class="container">
+        <h2>Request Simulasi Gratis</h2>
+        <p>Tim kami akan hubungi Anda dalam 1x24 jam</p>
+
+        <form onsubmit="sendWA(); return false;">
+            <input type="text" id="nama" placeholder="Nama Anda" required>
+            <input type="text" id="perusahaan" placeholder="Nama Perusahaan" required>
+            <input type="text" id="kebutuhan" placeholder="Kebutuhan Anda">
+            <button class="btn">Kirim & Konsultasi</button>
+        </form>
+    </div>
+</section>
+
+<!-- CTA -->
+<section style="text-align:center;">
+    <div class="container">
+        <h2>Atau Hubungi Kami Langsung</h2>
+        <a class="btn" href="https://wa.me/628118199961">Chat WhatsApp</a>
+    </div>
+</section>
+
+<footer style="background:#222; color:white; text-align:center; padding:20px;">
+    <p>© 2026 IoT Solution</p>
+</footer>
+
+<script>
+function sendWA(){
+    var nama = document.getElementById("nama").value;
+    var perusahaan = document.getElementById("perusahaan").value;
+    var kebutuhan = document.getElementById("kebutuhan").value;
+
+    var pesan = "Halo, saya ingin simulasi IoT Solution:%0A"
+              + "Nama: " + nama + "%0A"
+              + "Perusahaan: " + perusahaan + "%0A"
+              + "Kebutuhan: " + kebutuhan;
+
+    window.open("https://wa.me/628118199961?text=" + pesan, "_blank");
+}
+</script>
+
+</body>
+</html>
